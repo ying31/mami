@@ -1,0 +1,73 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/guoji.css">
+<div id="box">
+    <div class="fix">
+
+        <li>
+            <div>
+                <img src="../images/ycxf_icon_app.png" alt="">
+                <p>APP下载</p>
+                <div class="Appnone">
+                    <img src="../images/app_download_ewm.png" alt="" class="tupian">
+                    <p class="aa">扫码下载国际妈咪APP</p>
+                    <p class="aa">抢限量新人优惠礼包</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <img src="../images/ycxf_icon_cart.png" alt="">
+                <p> 购物袋</p>
+            </div>
+
+        </li>
+        <li>
+            <div>
+                <img src="../images/ycxf_icon_kf.png" alt="">
+                <p> 联系客服</p>
+                <div class="kefunone">
+                    <p>国际妈咪客服</p>
+                    <p>周一至周日8:30-21:00</p>
+                    <p>400-006-1777</p>
+                    <p>客服热线</p>
+                    <p>在线客服</p>
+                    <p>非工作时间可留言</p>
+                </div>
+            </div>
+
+        </li>
+        <li>
+            <div>
+                <img src="../images/ycxf_icon_weixin.png" alt="">
+                <p> 微信商城</p>
+                <div class="weixinshop">
+                    <img src="../images/weixin_applets_ma.jpg" alt="" class="tupian">
+                    <p class="aa">微信小程序</p>
+                    <p class="aa">微信扫码访问国际妈咪</p>
+                </div>
+            </div>
+
+        </li>
+        <li style=" border-bottom:none">
+            <div class="last">
+                <img src="../images/ycxf_icon_top.png" alt="">
+                <p> 回到顶部</p>
+            </div>
+        </li>
+    </div>
+    <script>
+        $(function () {
+            //3.回到顶部
+            $('.last').on('click', function () {
+                // console.log($('.last'));
+
+                $('html,body').animate({
+                    scrollTop: 0
+                })
+            });
+
+        })
+
+    </script>
+</div>

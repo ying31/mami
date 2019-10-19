@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/product-details.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/FD.js"></script>
+
+</head>
+
+<body>
+    <div class="box-header"> </div>
+    <script>
+        $(".box-header").load("h1.html")
+    </script>
+    <div class="product-content">
+        <div class="fl leftbox">
+            <div id="box">
+                <div class="bigimg">
+                </div>
+                <div class="imgs">
+
+                </div>
+                <div class="box3">
+                    <ul class="samllimg">
+                    </ul>
+                </div>
+
+                <div class="tops"><img src="../images/galleryup.png" alt=""></div>
+                <div class="bottoms"><img src="../images/gallerydown.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="fr rightbox">
+            <!-- <h1 class="name">Aptamil 德国爱他美奶粉1周岁以上 海外本土原版（8件优惠套餐）</h1>
+            <div class="fbt_zx">套餐更优惠 免税仓极速发货 新鲜安全直达</div>
+            <div class="jiage">
+                <span class="fl shp">￥121.00</span>
+                <div class="fl hdj_tb">活动价</div><span class="fl mkpp">￥160.80</span>
+            </div>
+            <div class="flash">
+                <span class="fl t_l">全球母婴特卖会</span>
+                <div class="fr timer"></div>
+            </div>
+
+            <div class="manjian item_box" id="hongbao_show_btn">
+                <span class="fl lbox">领券</span>
+                <span class="fl rbox">
+                    <i class="bonus_box">299-10</i>
+                    <i class="bonus_box">499-20</i>
+                    <i class="bonus_box">699-30</i>
+                    <i class="bonus_box">999-50</i>
+                    <i class="bonus_box">1499-80</i>
+                </span>
+                <code class="fr">&gt;</code>
+            </div>
+            <div class="manjian item_box" id="tax_show_btn">
+                <span class="fl lbox">税费 </span>
+                <span class="fl rbox">综合税预计￥88.08</span>
+                <code class="fr">&gt;</code>
+            </div>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide fl">
+                    <div class="tcxz">
+                        <a href="">
+                            <div class=" tcxzss">
+                                <p>￥158.00 / 件</p>
+                                <span>1件装</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide fl">
+                    <div class="tcxz">
+                        <a href="">
+                            <div class="tcxzss">
+                                <p>￥137.00 / 件</p>
+                                <span>2件装</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide fl">
+                    <div class="tcxz">
+                        <a href="">
+                            <div class="tcxzss">
+                                <p>￥147.00 / 件</p>
+                                <span>3件装</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide fl" style="  margin-right: 30px;">
+                    <div class="tcxz">
+                        <a href="">
+                            <div class="tcxzss">
+                                <p>￥131.00 / 件</p>
+                                <span>4件装</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="manjian item_box" style="margin-top: 15px;">
+                <span class="fl lbox">配发</span>
+                <span class="fl rbox">自由贸易区直达，满188免邮</span>
+                <code class="fr">&gt;</code>
+            </div>
+            <p class="fahuo">境外发货说明：尊敬的用户您好，此商品为境外仓储发货，即使保税区发货也需经过通关环节，效率相对国内快递会略慢，请您根据您的实际情况计划好您的收货时间！</p> -->
+        </div>
+        <!-- 列表页跳转到详情页 -->
+        <script>
+            var lstr = decodeURI(location.search).slice(1);
+            var zhtml = '';
+            var obj = {};
+            var arr = lstr.split('&');
+            for (var i = 0; i < arr.length; i++) {
+                var arr2 = arr[i].split('=');
+                obj[arr2[0]] = arr2[1];
+            }
+            console.log(obj)
+            // 数据渲染
+            var ohtml = "";
+            ohtml += `     <h1 class="name">${obj.title}</h1>
+            <div class="fbt_zx">套餐更优惠 免税仓极速发货 新鲜安全直达</div>
+            <div class="jiage">
+                <span class="fl shp">￥${obj.price}</span>
+                <div class="fl hdj_tb">活动价</div><span class="fl mkpp">${obj.redprice}</span>
+            </div>
+            <div class="flash">
+                <span class="fl t_l">全球母婴特卖会</span>
+                <div class="fr timer"></div>
+            </div>
+
+            <div class="manjian item_box" id="hongbao_show_btn">
+                <span class="fl lbox">领券</span>
+                <span class="fl rbox">
+                    <i class="bonus_box">299-10</i>
+                    <i class="bonus_box">499-20</i>
+                    <i class="bonus_box">699-30</i>
+                    <i class="bonus_box">999-50</i>
+                    <i class="bonus_box">1499-80</i>
+                </span>
+                <code class="fr">&gt;</code>
+            </div>
+            <div class="manjian item_box" id="tax_show_btn">
+                <span class="fl lbox">税费 </span>
+                <span class="fl rbox">综合税预计￥88.08</span>
+                <code class="fr">&gt;</code>
+            </div>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide fl">
+                    <div class="tcxz">
+                        <a href="">
+                            <div class=" tcxzss">
+                                <p>￥158.00 / 件</p>
+                                <span>1件装</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide fl">
+                    <div class="tcxz">
+                        <a href="">
+                            <div class="tcxzss">
+                                <p>￥137.00 / 件</p>
+                                <span>2件装</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide fl">
+                    <div class="tcxz">
+                        <a href="">
+                            <div class="tcxzss">
+                                <p>￥147.00 / 件</p>
+                                <span>3件装</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide fl" style="  margin-right: 30px;">
+                    <div class="tcxz">
+                        <a href="">
+                            <div class="tcxzss">
+                                <p>￥131.00 / 件</p>
+                                <span>4件装</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="manjian item_box" style="margin-top: 15px;">
+                <span class="fl lbox">配发</span>
+                <span class="fl rbox">自由贸易区直达，满188免邮</span>
+                <code class="fr">&gt;</code>
+            </div>
+            <p class="fahuo">境外发货说明：尊敬的用户您好，此商品为境外仓储发货，即使保税区发货也需经过通关环节，效率相对国内快递会略慢，请您根据您的实际情况计划好您的收货时间！</p>`
+            // console.log(ohtml);
+
+            $(".rightbox").append(ohtml);
+
+        </script>
+
+        <div class="suxing">
+            <div>
+                <span>保质期：</span>
+                <span>540 天</span>
+            </div>
+            <div>
+                <span>产品名称：</span>
+                <span>Aptamil/德国爱他美</span>
+            </div>
+            <div>
+                <span>品牌：</span>
+                <span>Aptamil/爱他美</span>
+            </div>
+            <div>
+                <span>系列：</span>
+                <span>德国爱他美奶粉系列</span>
+            </div>
+            <div>
+                <span>净含量：</span>
+                <span>600g</span>
+            </div>
+            <div>
+                <span>产地：</span>
+                <span>Poland/波兰</span>
+            </div>
+            <div>
+                <span>年龄：</span>
+                <span>1岁以上</span>
+            </div>
+            <div>
+                <span>阶段：</span>
+                <span>4段</span>
+            </div>
+            <div>
+                <span>类型：</span>
+                <span>标准配方</span>
+            </div>
+            <div>
+                <span>配发：</span>
+                <span>自贸仓直发</span>
+            </div>
+        </div>
+        <img src="../images/detai01.png" alt="" class="tail1">
+        <img src="../images/detail02.jpg" alt="" class="tail2">
+        <img src="../images/detai03.jpg" alt="" class="tail3">
+        <img src="../images/detail04.jpg" alt="" class="tail4">
+        <img src="../images/detai05.jpg" alt="" class="tail5">
+        <img src="../images/detail06.jpg" alt="" class="tail6">
+        <img src="../images/detai07.jpg" alt="" class="tail7">
+
+    </div>
+
+    <script>
+        let otime = document.querySelector(".timer");
+        console.log(otime);
+        function CountDown() {
+            var start = new Date();
+            var end = new Date('2019/11/26,18:00:00')
+            var result = parseInt((end.getTime() - start.getTime()) / 1000)
+            var d = parseInt(result / (24 * 60 * 60));
+            var h = parseInt(result / (60 * 60) % 24);
+            var m = parseInt(result / 60 % 60);
+            var s = parseInt(result % 60)
+            otime.innerHTML = d + '天' + h + '时' + m + '分' + s + '秒' + '后恢复MOMMY价格￥134.00';
+
+            setTimeout(CountDown, 1000);
+            if (result <= 0) {
+                otime.innerHTML = ''
+            }
+        }
+        CountDown()
+    </script>
+    <div class="box-footer"></div>
+    <script>
+        $(".box-footer").load("footer.html")
+    </script>
+    <div class="side"></div>
+    <script>
+        $(".side").load("side.html")
+    </script>
+    <div class="box-fix-1">
+        <div class="share_pos fl">
+            <img src="../images/goods_icon_share.png" alt="" class="share">
+            <p>分享</p>
+        </div>
+        <div class="dinggou fl">
+            <a href="">立即订购</a>
+        </div>
+        <div class="pingxiang fl">
+            <a href="">拼箱</a>
+        </div>
+        <div class="share_pos fl" style="margin-left: 100px;">
+            <img src="../images/goods_icon_collect.png" alt="" class="share">
+            <p>收藏</p>
+        </div>
+    </div>
+    <script>
+        fangdajing({
+            ele: 'box',//最外层盒子的id(必填)
+            imglist: ["../images/fdj01.jpg", "../images/faj02.jpg", "../images/faj03.jpg", "../images/faj04.jpg", "../images/faj05.jpg"],//图片数据(必填)
+            scal: 2,//大图放大倍数(选填,默认是2倍)
+            speed: 1,//小图运动的图片个数(选填,默认是一次动一张图)
+            Width: 80,//小图的宽度 宽度 + 左右边框 左右padding
+            BoPa: 8 //左右边框加左右padding的和
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.box {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+.box-list {
+    width: 1200px;
+    margin: auto;
+}
+
+.btn-class {
+    width: 1200px;
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    font-size: 12px;
+    color: #333;
+    border: 1px solid #ebebeb;
+    font-weight: normal;
+    background: #fafafa;
+    border-radius: 10px;
+    margin-top: 14px;
+}
+
+.btn-class span {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    color: #333;
+    font-size: 14px;
+    font-family: "PingFang SC Regular";
+    margin-top: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-class span:hover {
+    color: red;
+}
+
+.item {
+    border-radius: 7px;
+    margin: 5px;
+    width: 282px;
+    height: 452px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 1px solid #efefef;
+    float: left;
+}
+
+.item:hover {
+    border: 1px solid red;
+}
+
+.item-box {
+    position: relative;
+    text-align: center;
+}
+
+.item img {
+    margin-top: 2px;
+    width: 280px;
+    height: 260px;
+}
+
+.item-box .huizhang {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    margin-left: -135px;
+    z-index: 99;
+}
+
+.item-box .huizhang img {
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.title a {
+    text-decoration: none;
+    text-align: left;
+    margin-left: 10px;
+    color: #666;
+    font-size: 12px;
+}
+
+.temai {
+    margin-top: 20px;
+    width: 280px;
+    height: 24px;
+}
+
+.temai .temai2 {
+    height: 24px;
+    line-height: 24px;
+    padding: 0px 10px;
+    background-color: #ff2837;
+    color: #fff;
+    border-radius: 12px;
+
+}
+
+.temai .temai1 {
+    height: 24px;
+    line-height: 24px;
+    padding: 0px 10px;
+    background-color: #50c3d7;
+    color: #fff;
+    border-radius: 12px;
+    margin-left: 5px;
+    float: left;
+}
+
+.sale {
+    width: 260px;
+    height: 20px;
+    margin: 15px 10px;
+}
+
+.sale span:nth-child(1) {
+    font-size: 18px;
+    font-family: arial;
+    color: #E21735;
+    float: left;
+    padding-left: 5px;
+}
+
+.sale span:nth-child(2) {
+    float: left;
+    padding-left: 10px;
+    color: #b4b4b4;
+    font-size: 11px;
+}
+
+.sale span:nth-child(3) {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #b4b4b4;
+    /* float: left; */
+}
+
+.item-box .addCart {
+    border: 1px solid orange;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 100px;
+    text-align: center
+}
+
+.item-box .addCart:hover {
+    border: 1px solid red;
+    color: red;
+}
+
+.page {
+    /* position: fixed; */
+    /* bottom: 0px; */
+    width: 1130px;
+    margin: 40px auto;
+    /* margin-top: 100px; */
+    /* background: #195; */
+    text-align: center;
+    /* font-size: 13px; */
+    font-family: Verdana;
+    padding: 10px 16px
+}
+
+.page a {
+    display: inline-block;
+    height: 20px;
+    padding: 0 7px;
+    border: #CCC solid 1px;
+    /* font: 12px/20px Verdana; */
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 5px;
+    background: #FFF
+}
+
+.page a:hover {
+    background: #09F;
+    color: #FFF;
+    /* border-color: #09F */
+}
+
+.page .active {
+    background: #CCC
+}
+
+.page a:active {
+    opacity: .8
+}

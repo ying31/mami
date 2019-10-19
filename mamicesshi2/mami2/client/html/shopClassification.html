@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/findshop.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/shopClassification.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <!-- <script src="../js/findshop1.js"></script> -->
+
+</head>
+
+<body>
+    <div class="box-header"> </div>
+    <script>
+        $(".box-header").load("h1.html")
+    </script>
+    <div class="content-fiction">
+        <div class="tit_chi">
+            <span>商品</span>
+            分类明细 </div>
+        <p class="tit_eng">Classification</p>
+        <div class="naifen">德國奶粉</div>
+        <div class="fillter">
+            <div class="chooseone">
+                <div class="choose_l fl">品牌：</div>
+                <div class=" choose_r fl">
+                    <span class="choose_rs"><a href="">Aptamil/爱他美</a> </span>
+                    <span class="choose_rs"><a href="">Bambinchen/蓝色星球</a></span>
+                    <span class="choose_rs"><a href="">BEBA/雀巢</a></span>
+                    <span class="choose_rs"><a href="">Bebivita/贝唯他</a></span>
+                    <span class="choose_rs"><a href="">Hipp/喜宝</a></span>
+                </div>
+            </div>
+            <div class="choosetwo">
+                <span class="choose_l">类型：</span>
+                <span class="choosetow-e"><a href="">标准配方</a> </span>
+                <span class="choosetow-e"><a href="">特殊配方</a></span>
+                <span class="choosetow-e"><a href="">羊奶粉</a></span>
+                <span class="choosetow-e"><a href="">有机奶粉</a></span>
+            </div>
+            <div class="choosethree">
+                <span class="choose_l">更多选项：</span>
+                <div class="sxx">
+                    <div class="sxxls">
+                        <a href="" class="fl sxxls1">阶段
+                        </a>
+                    </div>
+                    <div class="skkl">
+                        <div class="skkl-1">
+                            <span class="choose_r"><a href="">1段</a></span>
+                            <span class="choose_r"><a href="">2段</a></span>
+                            <span class="choose_r"><a href="">3段</a></span>
+                            <span class="choose_r"><a href="">4段</a></span>
+                            <span class="choose_r"><a href="">5段</a></span>
+                            <span class="choose_r"><a href="">pre段</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="peiks">
+                    <div class="peiks-1">
+                        <a href="" class="fl peiks-1-1">配发
+                        </a>
+                    </div>
+                    <div class="zhifa">
+                        <div class="zhifa1">
+                            <span class="zhifa1-1"><a href="">海外仓直发</a></span>
+                            <span class="zhifa1-1"><a href="">自贸仓直发</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="classfictionlist">
+        </div>
+        <script>
+            $(".classfictionlist").load("http://127.0.0.1/mamicesshi2/mami2/client/html/shoplist.html")
+        </script>
+    </div>
+
+    <div class="help"></div>
+    <script>
+        $(".help").load("help.html")
+    </script>
+    <div class="box-footer"></div>
+    <script>
+        $(".box-footer").load("footer.html")
+    </script>
+</body>
+
+</html>

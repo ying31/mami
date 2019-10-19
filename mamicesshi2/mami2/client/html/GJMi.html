@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/guoji.css">
+    <link rel="stylesheet" href="../css/base.css">
+
+    <link rel="stylesheet" href="../css/lunbo.css">
+    <link rel="stylesheet" href="../css/dalunbo.css">
+    <script src="../js/lunboceshi.js"></script>
+    <script src="../js/dalunbo.js"></script>
+    <script src="../js/jquery-3.4.1.js"></script>
+
+</head>
+
+<body>
+    <!-- <script src="help.html"></script> -->
+    <div id="box">
+        <div class="content">
+            <header>
+                <h2 class="logo fl"><img src="../images/top_icon_gjmm_logo.png" alt="" class="logo-1"></h2>
+                <ul class="header1-1 fl clearfix">
+                    <li class="fl "><a href="" style="color: #ff2837">首页</a></li>
+                    <li class="fl"><a href="findshop.html" target="_blank">找商品</a></li>
+                    <li class="fl"><a href="###">MOMMY圈</a></li>
+                    <li class="fl"><a href="###">关于我们</a></li>
+                    <li class="fl"><a href="###">招商合作</a></li>
+                </ul>
+                <div class="input-1 fl"><input type="text"></div>
+                <ul class="header2-1 fl clearfix">
+                    <!-- <a href=""></a> -->
+                    <a href="" class="fl"><img src="../images/top_icon_gwd.png" alt=""></a>
+                    <a href="" class="fl"><img src="../images/top_icon_message.png" alt=""></a>
+                    <a href="denglu.html" target="_blank" class="fl"><img src="../images/top_icon_user.png" alt=""></a>
+                </ul>
+            </header>
+        </div>
+        <script>
+
+        </script>
+        <div class="main1">
+            <p class="p1">國際媽咪</p>
+            <p class="p2">海外直郵-與世界寶寶同步</p>
+            <div class="main-box">
+                <div class="main1-1 fl"><img src="../images/app_download_ewm.png" alt="">
+                    <p>下载國際媽咪APP</p>
+                </div>
+                <div class="main1-2 fl"><img src="../images/app_renze_download_ewm.png" alt="">
+                    <p>下载任责母婴APP</p>
+                </div>
+            </div><a href="">任责母婴-育儿管理系统，多项育儿功能陪伴宝宝成长，不断加入新功能></a>
+        </div>
+        <div class="banner">
+            <div class="part-half">
+                <div class="part-half-1">LEADER</div>
+                <div class="part-half-2">海淘母婴直邮领导者</div>
+                <div class="part-half-3">ENTITY</div>
+                <div class="part-half-4">开放自提，实体母婴商城</div>
+                <div class="part-half-5">MILLIONS</div>
+                <div class="part-half-6">千万妈咪首选，海外自营直邮</div>
+                <div class="part-half-7">PARENTING</div>
+                <div class="part-half-8">育儿经验，购物交流分享圈</div>
+            </div>
+            <div class="banner-play">
+                <img src="../images/indexN_part2_r_bg.png" alt="">
+            </div>
+            <div class="banner-lunplay" id="banner-lunplay1">
+
+                <div class="move" id="move">
+                    <ul>
+                        <li>
+                            <img src="../images/indexN_part2_tu1.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/indexN_part2_tu2.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/indexN_part2_tu3.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/indexN_part2_tu4.jpg" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- <script src="../js/jquery-3.4.1.js"></script> -->
+            <script type="text/javascript" src="../js/mami.js"></script>
+            <script type="text/javascript">
+                $(function () {
+                    // 调用
+                    $('#banner-lunplay1').myscroll({
+                        picEl: $('#move'), //图片父级，不传默认为banner内第1个div
+                        autoPlay: true, //是否自动播放，true || false,不传默认true
+                        time: 1000, //自动播放间隔时间，true || false,不传默认2000
+                        speed: 400, //图片切换速度，不传默认400
+                        effect: 'left', //轮播的改变方式 top||left||fade，不传默认left
+                    });
+                })
+            </script>
+        </div>
+        <div class="main2">
+            <div class="main2-1"><img src="../images/indexN_group_img.png" alt=""></div>
+            <div class="title1">Group booking</div>
+            <div class="title2">下载国际妈咪APP，千万妈咪一起海外拼团</div>
+
+            <div class="lunbo1-1"> </div>
+            <script src="../js/jquery.slide.js"></script>
+            <script>
+                $.ajax({
+                    type: "get",
+                    url: "http://127.0.0.1/lianxi/server/01.php",
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data);
+                        let manager = new Manger(data);
+                        manager.init();
+                        jQuery(function ($) {
+                            $("#box1").slide({ effect: "scrollx", auto: true, seamless: true, beLock: true });
+                        });
+                    }
+                });
+            </script>
+            <!-- <script>
+                $(".lunbo1-1").load("lunbo1.html")
+            </script> -->
+        </div>
+        <div class="main3">
+            <p class="main3-1">Special offer</p>
+            <p class="main3-2">随时关注国际妈咪APP，同步海外商超优惠活动</p><a href=""><span>本期活动</span><img
+                    src="../images/gjmm_main_huodong_phone01.jpg" alt=""></a>
+        </div>
+        <div class="main4">
+            <div class="content">
+                <p>Brands</p>
+                <p>打开国际妈咪APP，海外本土大牌原版直邮</p>
+                <div class="main4-1">
+                    <li class="list1 fl">
+                        Aptamil(DE)
+                        <img src="../images/1500576867446715434.jpg" alt="">
+                    </li>
+
+                    <li class="list1 fl">
+                        Topfer
+                        <img src="../images/1500859618000412925.jpg" alt="">
+                    </li>
+                    <li class="list1 fl">
+                        Gerber
+                        <img src="../images/1500934505761290987.jpg" alt="">
+                    </li>
+
+                    <li class="list1 fl">
+                        Cow&Gate
+                        <img src="../images/1500858670384172902.jpg" alt="">
+                    </li>
+                    <li class="list1 fl">
+                        Pampers
+                        <img src="../images/1500931327329229871.jpg" alt="">
+                    </li>
+
+                    <li class="list1 fl" style="margin-right: none;">
+                        Aptamil(UK)
+                        <img src="../images/1500858619157883070.jpg" alt="">
+                    </li>
+                    <li class="list1 fl" style="margin-right: none;">
+                        EARTHS BEST
+                        <img src="../images/1500932659005820692.jpg" alt="">
+                    </li>
+                    <li class="list1 fl" style="margin-right: none;">
+                        WELEDA
+                        <img src="../images/1502219625819683744.jpg" alt="">
+                    </li>
+                    <li class="list1 fl" style="margin-right: none;">
+                        NIVEA
+                        <img src="../images/1500589955220694940.jpg" alt="">
+                    </li>
+                    <li class="list1 fl" style="margin-right: none;">
+                        Herbacin
+                        <img src="../images/1502669611309428918.jpg" alt="">
+                    </li>
+                    <li class="list1 fl" style="margin-right: none;">
+                        Sanosan
+                        <img src="../images/1501200944005126489.jpg" alt="">
+                    </li>
+                    <li class="list1 fl" style="margin-right: none;">
+                        Salus
+                        <img src="../images/1501023340517556640.jpg" alt="">
+                    </li>
+                    <li class="list1 fl" style="margin-right: none;">
+                        Dr.Hauschka
+                        <img src="../images/1501716649329804705.jpg" alt="">
+                    </li>
+                    <li class="list1 fl" style="margin-right: none;">
+                        PENATEN
+                        <img src="../images/1501454250376160665.jpg" alt="">
+                    </li>
+                    <li class="list1 fl" style="margin-right: none;">
+                        Nip
+                        <img src="../images/1501028179079741471.jpg" alt="">
+                    </li>
+                    <li class="list1 fl" style="margin-right: none;">
+                        Aveeno
+                        <img src="../images/1502668460625019267.jpg" alt="">
+                    </li>
+                    <li class="list1 fl" style="margin-right: none;">
+                        Schaebens
+                        <img src="../images/1500593264394579572.jpg" alt="">
+                    </li>
+                    <li class="list1 fl" style="margin-right: none;">
+                        Dr.Wolz
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="banner1">
+            <p class="dbtitle1">Mommy circle</p>
+            <p class="dbtitle2">下载国际妈咪APP，千万妈咪口碑分享，赢好礼红包</p>
+            <div class="banner22-2"> </div>
+            <script src="../js/jquery.slide.js"></script>
+            <script>
+                $.ajax({
+                    type: "get",
+                    url: "http://127.0.0.1/mamicesshi/mami/server/02.php",
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data);
+                        let manager = new Manger1(data);
+                        manager.init();
+                        jQuery(function ($) {
+                            $("#box3").slide({ effect: "scrollx", auto: true, seamless: true, beLock: true });
+                        });
+                    }
+                });
+            </script>
+        </div>
+        <div class="main5">
+            <div class="content">
+                <a href="" class="fl">
+                    <img src="../images/indexN_bt_01.png" alt="">
+                </a>
+                <a href="" class="fl">
+                    <img src="../images/indexN_bt_02.png" alt="">
+                </a>
+                <a href="" class="fl">
+                    <img src="../images/indexN_bt_03.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="main6">
+            <video src="../images/zeren520_15m.mp4" controls="" autobuffer=""
+                poster="../images/zeren520sj_04.jpg"></video>
+        </div>
+        <div class="main7">
+            <div class="main7-1">
+                <div class="main7-left fl">
+                    <div class="main7-a fl" style="margin-top:none;">
+                        <div class="a1 fl">
+                            <p>帮助</p>
+                            <p>自助查询</p>
+                        </div>
+                        <div class="a2 fl">
+                            <li> <a href="">使用指南</a></li>
+                            <li> <a href="">海淘国际物流查询</a></li>
+                            <li> <a href="">海关税率表</a></li>
+                        </div>
+                    </div>
+                    <div class="main7-b fl" style="margin-top:none;">
+                        <ul class="b-1 fl">
+                            <li><a href="">配送方式解读</a> </li>
+                            <li><a href="">优惠券使用说明</a> </li>
+                            <li><a href="">售后政策</a> </li>
+                        </ul>
+                        <ul class="b-2 fl">
+                            <li><a href="">支付方式说明</a> </li>
+                            <li><a href="">直邮及关税说明</a> </li>
+                            <li><a href="">退换货说明</a> </li>
+                        </ul>
+                    </div>
+                    <div class="main7-c fl">
+                        <ul class="c-1 fl">
+                            <li><a href="">明德任责</a> </li>
+                            <li><a href="">开放自提-实体母婴商城</a> </li>
+                        </ul>
+                        <ul class="c-2 fl">
+                            <li><a href="">德意中外运</a> </li>
+                            <li><a href="">国际妈咪简介</a> </li>
+                        </ul>
+
+                    </div>
+                    <div class="main7-d fl">
+                        <ul class="d-1 fl">
+                            <li><a href="">经验及积分</a> </li>
+                            <li><a href="">正品无忧</a> </li>
+                        </ul>
+                        <ul class="d-2 fl">
+                            <li><a href="">口碑笔记奖励</a> </li>
+                            <li><a href="">法律声明</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main7-center fl">
+                    <p>400-006-1777</p>
+                    <p>客服热线：8:30-21:00</p>
+                    <li><a href="">向国内负责人投诉</a></li>
+                    <div class="center-bottom">
+                        <p class="fl">关注我们<p>
+                                <div class="weixin fl"><img src="../images/indexN_icon_foot_wx.png" alt="" class="im1">
+                                    <div class="weixin2"> <img src="../images/weixin_2wm.png" class="fl" alt=""></div>
+                                </div>
+                                <div class="weibo fl">
+                                    <img src="../images/indexN_icon_foot_wb.png" alt="">
+                                </div>
+                    </div>
+                </div>
+                <div class="main7-right fl">
+                    <div class="main7-righta">
+                        扫描下载手机APP
+                    </div>
+                    <div class="main7-rightb">
+                        <img src="../images/app_download_ewm.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fix">
+            <li>
+                <div>
+                    <img src="../images/ycxf_icon_app.png" alt="">
+                    <p>APP下载</p>
+                    <div class="Appnone">
+                        <img src="../images/app_download_ewm.png" alt="" class="tupian">
+                        <p class="aa">扫码下载国际妈咪APP</p>
+                        <p class="aa">抢限量新人优惠礼包</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="../images/ycxf_icon_cart.png" alt="">
+                    <p> 购物袋</p>
+                </div>
+
+            </li>
+            <li>
+                <div>
+                    <img src="../images/ycxf_icon_kf.png" alt="">
+                    <p> 联系客服</p>
+                    <div class="kefunone">
+                        <p>国际妈咪客服</p>
+                        <p>周一至周日8:30-21:00</p>
+                        <p>400-006-1777</p>
+                        <p>客服热线</p>
+                        <p>在线客服</p>
+                        <p>非工作时间可留言</p>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                <div>
+                    <img src="../images/ycxf_icon_weixin.png" alt="">
+                    <p> 微信商城</p>
+                    <div class="weixinshop">
+                        <img src="../images/weixin_applets_ma.jpg" alt="" class="tupian">
+                        <p class="aa">微信小程序</p>
+                        <p class="aa">微信扫码访问国际妈咪</p>
+                    </div>
+                </div>
+
+            </li>
+            <li style=" border-bottom:none">
+                <div class="last">
+                    <img src="../images/ycxf_icon_top.png" alt="">
+                    <p> 回到顶部</p>
+                </div>
+            </li>
+        </div>
+        <script>
+            $(function () {
+                //3.回到顶部
+                $('.last').on('click', function () {
+                    // console.log($('.last'));
+
+                    $('html,body').animate({
+                        scrollTop: 0
+                    })
+                });
+
+            })
+
+        </script>
+        <footer>
+            <ul>
+                <li class="fl">
+                    <a href="">招商合作</a>
+                    <span>–</span>
+                </li>
+                <li class="fl">
+                    <a href="">加入我们</a>
+                    <span>–</span>
+                </li>
+                <li class="fl">
+                    <a href="">联系我们</a>
+                    <span>–</span>
+                </li>
+                <li class="fl">
+                    <a href=""> 友情链接</a>
+                    <span>–</span>
+                </li>
+                <li class="fl">
+                    <a href="">服务协议</a>
+                    <span>–</span>
+                </li>
+                <li class="fl">
+                    <a href="">交易规则</a>
+                    <span>–</span>
+                </li>
+                <li class="fl">
+                    <a href="">隐私政策</a>
+                    <span>–</span>
+                </li>
+                <li class="fl">
+                    <a href="">自营信息公示</a>
+                    <span>–</span>
+                </li>
+            </ul>
+            <div class="footer-2">
+                <img src="../images/page_footer_hubeian_icon.png" alt="">
+                <span> 沪公网安备 31010402005375号</span>
+                <span> 沪ICP备12049350号-2</span>
+                <span> 增值电信业务经营许可证：沪B2-20180865 </span>
+                <span> Copyright ©2019 Shanghai Verantwortung
+                    Information Technology Co.,Ltd.</span>
+            </div>
+            <p>
+                <img src="../images/foot_ico17.gif" alt="" class="fl">
+                <img src="../images/star4.png" alt="" class="fl">
+                <img src="../images/sf.png" alt="" class="fl">
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

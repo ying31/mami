@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="../css/denglu.css">
+    <script src="../js/captcha-mini.js"></script>
+    <script src="../js/denglu.js"></script>
+
+</head>
+
+<body>
+    <div class="box-header"> </div>
+    <script>
+        $(".box-header").load("h1.html")
+    </script>
+    <div class="denglu">
+        <div class="register-link"><span>还没有账号？</span> <a href="zhuce.html" class="button register">立即注册</a></div>
+        <div class="denglu-box">
+
+            <div class="denglu-header"><span>会员</span>安全登录</div>
+
+            <p class="bb">Secure login</p>
+            <div class="from-item">
+                <input type="text" placeholder="手机号码" class="phonenumber" id="ppnu">
+                <span class="form-group__message"></span>
+            </div>
+
+            <div class="shibie ">
+
+                <input type="text" placeholder="识别码" class="shibienumber" maxlength="6" id="imageCode">
+                <!-- <span class="ff">ddd</span> -->
+                <div class="image-code-box">
+                    <canvas width="160" height="45" id="captcha"></canvas>
+
+                </div>
+            </div>
+            <div class="dongtai">
+                <input type="text" placeholder="动态码" class="dongtainumber">
+                <span class="duanxin">获取动态码</span>
+
+            </div>
+            <button class="btn">登录</button>
+            <div class="work">
+                <p> 合作帐号登录</p>
+                <p>
+                    <img src="../images/login_icon_hz_qq.png" alt="">
+                    <img src="../images/login_icon_hz_wx.png" alt="">
+                </p>
+            </div>
+            <div class="gouxuan">
+                <input name="agreement" type="checkbox" value="1" checked="checked" class="agree">
+            </div>
+            <div class="tongyi">我已阅读并接受<a href="">《使用条款》</a> </div>
+        </div>
+    </div>
+    <div class="box-footer"></div>
+    <script>
+        $(".box-footer").load("footer.html")
+    </script>
+    <div class="side"></div>
+    <script>
+        $(".side").load("side.html")
+    </script>
+</body>
+
+</html>

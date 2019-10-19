@@ -1,0 +1,210 @@
+.denglu {
+    width: 1200px;
+    margin: auto;
+
+    .erro .form-group__message {
+        display: inline-block;
+        font-size: 12px;
+        color: #c33
+    }
+
+    .erro .btn:disabled,
+    .erro button:disabled {
+        background-color: #ccc !important;
+        cursor: not-allowed !important
+    }
+
+    .erro input,
+    .erro input:focus,
+    .erro input:hover,
+    .erro textarea {
+        border-color: #c33 !important
+    }
+
+    // background: peru;
+    .register-link {
+        margin-left: 870px;
+        height: 50px;
+        width: 200px;
+
+        a {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #ff2837;
+            color: #fff;
+            border: 1px solid #ff2837;
+        }
+    }
+
+    .denglu-box {
+        width: 425px;
+        height: 800px;
+        // background: pink;
+        margin: auto;
+
+
+
+        .denglu-header {
+            font-size: 24px;
+            line-height: 134px;
+            color: #333;
+            text-align: center;
+
+
+            span {
+                font-size: 24px;
+                line-height: 24px;
+                color: #333;
+                font-weight: bold;
+                padding-right: 16px;
+            }
+        }
+
+        .bb {
+            text-align: center;
+            font-size: 14px;
+            margin-top: -57px;
+            color: #969696;
+            padding-top: 10px;
+        }
+
+        .from-item {
+            width: 400px;
+            margin-top: 40px;
+            height: 60px;
+
+            .phonenumber {
+                width: 400px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 10px;
+                color: #b9b9b9;
+                border: solid 1px #ebebeb;
+                border-radius: 5px;
+            }
+
+            .aa {
+                display: none;
+                font-size: 11px;
+            }
+        }
+
+
+
+        .shibie {
+            height: 425px;
+            height: 40px;
+
+            .shibienumber {
+                width: 220px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 10px;
+                margin-top: 25px;
+                color: #b9b9b9;
+                border: solid 1px #ebebeb;
+                float: left;
+                border-radius: 5px;
+            }
+
+            .image-code-box {
+                // display: inline-block;
+                width: 160px;
+                height: 40px;
+                line-height: 40px;
+                margin-left: 20px;
+                margin-top: 35px;
+                text-align: center;
+                border: solid 1px #ebebeb;
+                border-radius: 8px;
+                float: right;
+
+            }
+        }
+
+        .dongtai {
+
+            .dongtainumber {
+                width: 220px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 10px;
+                margin-top: 25px;
+                color: #b9b9b9;
+                border: solid 1px #ebebeb;
+                float: left;
+                border-radius: 5px;
+            }
+
+            span {
+                display: inline-block;
+                color: #ff2837;
+                width: 160px;
+                height: 40px;
+                line-height: 40px;
+                margin-left: 20px;
+                margin-top: 35px;
+                text-align: center;
+                border: solid 1px #ff2837;
+                border-radius: 8px;
+                float: right;
+
+            }
+        }
+
+        .btn {
+            width: 420px;
+            height: 50px;
+            margin: 35px 0px;
+            line-height: 50px;
+            background-color: #ff2837;
+            color: #fff;
+            font-size: 20px;
+            font-family: "PingFang SC Regular";
+            border: none;
+            border-radius: 6px;
+        }
+
+        .work {
+            p:nth-child(1) {
+                color: #333;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                font-size: 16px;
+                font-family: "PingFang SC Regular";
+                margin-top: 20px;
+            }
+
+            p:nth-child(2) {
+                margin: 20px 0 0 100px;
+
+                img {
+                    margin-left: 20px;
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+        }
+
+        .gouxuan {
+            margin-left: 100px;
+            margin-top: 30px;
+            float: left;
+        }
+
+        .tongyi {
+            margin-top: 30px;
+            float: left;
+        }
+
+    }
+
+
+}

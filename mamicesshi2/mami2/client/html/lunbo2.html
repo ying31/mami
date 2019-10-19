@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin: 70px 50px;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        #box3 {
+            width: 1200px;
+            padding: 10px;
+            margin: 50px 0 20px;
+            /* border: 1px solid #e9e9e9; */
+        }
+
+        #box3 .box4 {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 540px;
+        }
+
+        #box3 .box4 ul {
+
+            margin-left: -10px;
+        }
+
+        #box3 .box4 li {
+
+            float: left;
+            width: 290px;
+            height: 538px;
+            padding-left: 10px;
+            list-style: none;
+        }
+
+        #box3 .box4 li .xiaopictuer {
+            margin-top: 40px;
+            margin-left: 15px;
+            float: left;
+        }
+
+        #box3 .box4 li .xiaopictuer img {
+            width: 40px;
+            height: 40px;
+        }
+
+        #box3 .box4 li .xiaopictuer span {
+            color: #b9b9b9;
+            font-size: 12px;
+        }
+
+        #box3 .box4 li .yonghuname {
+            margin-right: 15px;
+            margin-top: 60px;
+            float: right;
+        }
+
+        #box3 .box4 li .yonghuname span:nth-child(1) {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+
+            background: url(../src/aixin.png);
+            background-size: 100% 100%;
+        }
+
+        #box3 .box4 li .yonghuname span:nth-child(2) {
+            font-size: 14px;
+            line-height: 20px;
+            color: #b9b9b9;
+        }
+
+        #box3 .box4 li p {
+            text-align: left;
+            color: #737373;
+            font-size: 14px;
+        }
+
+        #box3 .box4 li a img {
+
+            width: 290px;
+
+        }
+    </style>
+
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/jquery.slide.js"></script>
+    <script src="../js/dalunbo.js"></script>
+
+
+</head>
+
+<body>
+    <script>
+
+        $.ajax({
+            type: "get",
+            url: "http://127.0.0.1/mamicesshi/mami/server/02.php",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                let manager = new Manger1(data);
+                manager.init();
+                jQuery(function ($) {
+                    $("#box1").slide({ effect: "scrollx", auto: true, seamless: true, beLock: true });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+.find_cate_content {
+  width: 1200px;
+  height: 8900px;
+  margin: auto;
+}
+
+.find_cate_content .find_main {
+  width: 1200px;
+  height: 400px;
+}
+
+.find_cate_content .find_main .find_main_cate {
+  width: 100%;
+  height: 100px;
+}
+
+.find_cate_content .find_main .find_main_cate .find_cate_main_c {
+  width: 100%;
+  line-height: 94px;
+  font-size: 24px;
+  font-family: "PingFang SC Regular";
+  color: #333;
+  text-align: center;
+}
+
+.find_cate_content .find_main .find_main_cate .find_cate_main_e {
+  width: 100%;
+  line-height: 14px;
+  font-size: 14px;
+  font-family: Arial;
+  color: #969696;
+  text-align: center;
+  margin-top: -25px;
+  margin-bottom: 46px;
+}
+
+.find_cate_content .find_main .find_cate_box {
+  width: 100%;
+  height: 900px;
+}
+
+.find_cate_content .find_main .find_cate_box a {
+  margin-top: 20px;
+  margin-left: 95px;
+  height: 237px;
+  float: left;
+  width: 180px;
+}
+
+.find_cate_content .find_main .find_cate_box a img {
+  width: 180px;
+  height: 180px;
+  border-radius: 27px;
+}
+
+.find_cate_content .find_main .find_cate_box a .ctext {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+  line-height: 16px;
+  margin-left: 70px;
+}
+
+.find_cate_content .find_main .find_cate_box a .etext {
+  color: #969696;
+  line-height: 12px;
+  font-size: 12px;
+  margin-left: 70px;
+  margin-top: 5px;
+}
+
+.haiwaibentu {
+  width: 100%;
+  line-height: 94px;
+  font-size: 24px;
+  font-family: "PingFang SC Regular";
+  color: #333;
+  text-align: center;
+}
+
+.hai1 {
+  width: 100%;
+  line-height: 14px;
+  font-size: 14px;
+  font-family: Arial;
+  color: #969696;
+  text-align: center;
+  margin-top: -25px;
+  margin-bottom: 46px;
+}
